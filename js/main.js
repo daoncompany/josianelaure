@@ -48,7 +48,7 @@
       heroSlides[currentSlide].classList.remove('jl-hero__slide--active');
       if (heroDots[currentSlide]) {
         heroDots[currentSlide].classList.remove('jl-hero__dot--active');
-        heroDots[currentSlide].setAttribute('aria-selected', 'false');
+        heroDots[currentSlide].setAttribute('aria-pressed', 'false');
       }
 
       currentSlide = (index + heroSlides.length) % heroSlides.length;
@@ -56,7 +56,7 @@
       heroSlides[currentSlide].classList.add('jl-hero__slide--active');
       if (heroDots[currentSlide]) {
         heroDots[currentSlide].classList.add('jl-hero__dot--active');
-        heroDots[currentSlide].setAttribute('aria-selected', 'true');
+        heroDots[currentSlide].setAttribute('aria-pressed', 'true');
       }
     };
 

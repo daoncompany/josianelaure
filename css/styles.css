@@ -66,6 +66,7 @@ body {
   font-weight: 500;
   font-size: 15px;
   line-height: 1.55;
+  word-break: keep-all;
 }
 
 a {
@@ -109,11 +110,11 @@ img, svg { display: block; max-width: 100%; }
   justify-content: center;
   gap: 8px;
   text-decoration: none;
-  padding: 16px 40px;
+  padding: 16px 36px;
   border-radius: 999px;
   border: 1px solid;
-  font-size: 12px;
-  letter-spacing: 0.18em;
+  font-size: 14px;
+  letter-spacing: 0.14em;
   text-transform: uppercase;
   font-weight: 700;
   cursor: pointer;
@@ -187,8 +188,8 @@ img, svg { display: block; max-width: 100%; }
 .jl-nav__links a {
   text-decoration: none;
   font-weight: 700;
-  font-size: 12px;
-  letter-spacing: 0.14em;
+  font-size: 13px;
+  letter-spacing: 0.12em;
   text-transform: uppercase;
   color: var(--color-text);
 }
@@ -552,8 +553,8 @@ img, svg { display: block; max-width: 100%; }
 .jl-footer__branch-link {
   display: inline-block;
   margin-top: 14px;
-  font-size: 12px;
-  letter-spacing: 0.08em;
+  font-size: 13px;
+  letter-spacing: 0.06em;
   color: var(--color-accent-300);
   text-decoration: none;
 }
@@ -593,7 +594,7 @@ img, svg { display: block; max-width: 100%; }
 }
 .jl-sticky-cta .jl-btn {
   padding: 13px 28px;
-  font-size: 11px;
+  font-size: 13px;
   background: var(--color-bg);
   border-color: var(--color-bg);
   color: var(--color-text);
@@ -670,7 +671,7 @@ img, svg { display: block; max-width: 100%; }
     gap: 48px;
   }
 
-  .jl-branch__grid,
+  .jl-branch--hannam .jl-branch__grid,
   .jl-branch--busan .jl-branch__grid {
     grid-template-columns: 1fr;
     gap: 40px;
@@ -720,8 +721,14 @@ img, svg { display: block; max-width: 100%; }
   }
 
   .jl-heritage__row {
-    text-align: left;
-    justify-content: flex-start;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 32px;
+  }
+  .jl-heritage__stat {
+    min-width: 0;
+    width: 100%;
   }
   .jl-heritage__divider {
     display: none;
@@ -743,7 +750,7 @@ img, svg { display: block; max-width: 100%; }
   .jl-sticky-cta .jl-btn {
     flex: 1;
     padding: 13px 12px;
-    font-size: 10px;
-    letter-spacing: 0.1em;
+    font-size: 12px;
+    letter-spacing: 0.08em;
   }
 }

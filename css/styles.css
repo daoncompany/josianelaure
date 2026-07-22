@@ -284,6 +284,20 @@ img, svg { display: block; max-width: 100%; }
   letter-spacing: 0.01em;
   margin: 0;
 }
+.jl-hero__subtext {
+  font-size: 16px;
+  color: rgba(255, 255, 255, 0.88);
+  text-shadow: 0 2px 16px rgba(0, 0, 0, 0.4);
+  max-width: 520px;
+  line-height: 1.7;
+  margin: 20px 0 0;
+}
+@media (min-width: 861px) {
+  .jl-hero__subtext {
+    max-width: none;
+    white-space: nowrap;
+  }
+}
 .jl-hero__actions {
   display: flex;
   gap: 18px;
@@ -626,8 +640,11 @@ img, svg { display: block; max-width: 100%; }
 .jl-hero__content .jl-hero__title.jl-reveal {
   transition-delay: 0.25s;
 }
+.jl-hero__content .jl-hero__subtext.jl-reveal {
+  transition-delay: 0.35s;
+}
 .jl-hero__content .jl-hero__actions.jl-reveal {
-  transition-delay: 0.45s;
+  transition-delay: 0.5s;
 }
 
 @media (prefers-reduced-motion: reduce) {
